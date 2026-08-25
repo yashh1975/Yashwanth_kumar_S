@@ -74,31 +74,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Yashwanth Kumar S (yashh) | AI & Cloud Software Engineer | Official Portfolio" },
+      { title: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer | Official Portfolio" },
       {
         name: "description",
         content:
-          "Official portfolio website of Yashwanth Kumar S (yashh / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist. Explore projects, LeetCode stats, and skills.",
+          "Official portfolio website of Yash (Yashwanth Kumar S / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist. Explore projects, LeetCode stats, and skills.",
       },
       {
         name: "keywords",
         content:
-          "Yashwanth Kumar S, Yashwanth Kumar, Yashwanth S, yashh, yashh1975, YASHWANTHKUMARS, Yashwanth, Yashwanth Portfolio, yashh.pages.dev, Yashwanth AI Engineer, Yashwanth Cloud Developer",
+          "Yash, Yashwanth, Yashwanth Kumar S, Yashwanth Kumar, Yashwanth S, yashh, yashh1975, YASHWANTHKUMARS, Yash Portfolio, yashh.pages.dev, Yash AI Engineer, Yash Cloud Developer",
       },
-      { name: "author", content: "Yashwanth Kumar S" },
+      { name: "author", content: "Yashwanth Kumar S (Yash)" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
-      { property: "og:title", content: "Yashwanth Kumar S (yashh) | AI & Cloud Software Engineer" },
+      { property: "og:title", content: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer" },
       {
         property: "og:description",
         content:
-          "Official portfolio of Yashwanth Kumar S (yashh / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist.",
+          "Official portfolio of Yash (Yashwanth Kumar S / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist.",
       },
       { property: "og:url", content: "https://yashh.pages.dev/" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Yashwanth Kumar S Portfolio" },
+      { property: "og:site_name", content: "Yash Portfolio (Yashwanth Kumar S)" },
       { property: "og:image", content: "https://yashh.pages.dev/favicon.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Yashwanth Kumar S (yashh) | AI & Cloud Software Engineer" },
+      { name: "twitter:title", content: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer" },
       {
         name: "twitter:description",
         content:

@@ -71,6 +71,7 @@ export function Hero({ onResume }: { onResume: () => void }) {
               Hi, I&apos;m
             </span>
             <span className="text-gradient">{SITE.name}</span>
+            <span className="sr-only"> — Yash (Yashwanth S / yashh1975) Software Engineer & AI Developer</span>
           </motion.h1>
 
           <motion.p
