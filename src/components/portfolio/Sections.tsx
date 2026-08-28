@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import {
   Award,
+  Bot,
   BrainCircuit,
   Cloud,
   Code2,
@@ -38,6 +39,7 @@ const ICONS: Record<string, LucideIcon> = {
   Cloud,
   Wrench,
   BrainCircuit,
+  Bot,
   ShieldCheck,
   Medal,
   Award,

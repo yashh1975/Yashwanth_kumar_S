@@ -105,6 +105,14 @@ export const SKILL_GROUPS = [
     ],
   },
   {
+    title: "RPA",
+    icon: "Bot",
+    skills: [
+      { name: "Power Automate", level: 80 },
+      { name: "UiPath Studio", level: 88 },
+    ],
+  },
+  {
     title: "Cybersecurity",
     icon: "ShieldCheck",
     skills: [
