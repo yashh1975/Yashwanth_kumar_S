@@ -191,7 +191,7 @@ export const PROJECTS: {
     tags: ["HTML", "CSS", "JavaScript", "UI"],
     category: "Web",
     metric: "100% responsive",
-    code: "https://github.com/yashh1975/Anjaneya-gold-company",
+    code: "https://github.com/yashh1975/AGC",
     demo: "https://anjaneyagoldcompany.com",
   },
 ];
