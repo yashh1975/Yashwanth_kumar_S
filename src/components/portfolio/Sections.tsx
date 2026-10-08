@@ -15,6 +15,7 @@ import {
   Quote,
   Rocket,
   ShieldCheck,
+  Sparkles,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
@@ -24,6 +25,7 @@ import {
   CERTIFICATIONS,
   EXPERIENCE,
   PROJECTS,
+  SERVICES,
   SITE,
   SKILL_GROUPS,
   STATS,
@@ -48,6 +50,15 @@ const ICONS: Record<string, LucideIcon> = {
 };
 
 export function About() {
+  const { gh } = useProfileStats();
+
+  const stats = [
+    { value: 3, suffix: "+", label: "Years Learning" },
+    { value: gh.repos || 14, suffix: "", label: "Public Repositories" },
+    { value: 10, suffix: "", label: "Certifications" },
+    { value: 1000, suffix: "+", label: "Coding Problems Goal" },
+  ];
+
   return (
     <section id="about" className="section-pad px-4">
       <div className="mx-auto max-w-6xl">
@@ -55,22 +66,19 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <Reveal className="glass-card p-8 sm:p-10">
             <p className="text-lg leading-relaxed text-foreground/90">
-              I am a Computer Science and Design undergraduate passionate about software
-              engineering, artificial intelligence, cloud computing, cybersecurity, and modern web
-              technologies.
+              I am a Computer Science and Design undergraduate and freelance developer passionate about software
+              engineering, artificial intelligence, automation, and modern web applications.
             </p>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              I enjoy building impactful applications that combine clean architecture with intuitive
-              user experiences.
+              I help businesses build custom AI chatbots, full-stack web applications, and RPA automation tools — from concept to live deployment.
             </p>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              My goal is to become a software engineer capable of solving real-world problems using
-              scalable technologies.
+              Available for freelance contracts, custom development projects, and software engineering opportunities.
             </p>
           </Reveal>
 
           <div className="grid grid-cols-2 gap-4">
-            {STATS.map((s, i) => (
+            {stats.map((s, i) => (
               <Reveal key={s.label} delay={i * 0.08}>
                 <TiltCard className="glass-card h-full p-6">
                   <p className="font-display text-3xl font-bold text-gradient sm:text-4xl">
@@ -96,7 +104,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="Tech Arsenal"
-          sub="A toolkit spanning full-stack engineering, machine learning and cloud security."
+          sub="A comprehensive toolkit spanning full-stack engineering, machine learning, cloud, and RPA automation."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SKILL_GROUPS.map((group, gi) => {
@@ -113,30 +121,83 @@ export function Skills() {
                     </span>
                     <h3 className="font-display text-lg font-semibold">{group.title}</h3>
                   </div>
-                  <ul className="mt-6 space-y-4">
+                  <div className="mt-5 flex flex-wrap gap-2">
                     {group.skills.map((s) => (
-                      <li key={s.name}>
-                        <div className="flex justify-between text-sm">
-                          <span className="text-foreground/90">{s.name}</span>
-                          <span className="text-muted-foreground">{s.level}%</span>
-                        </div>
-                        <div className="mt-2 h-2 overflow-hidden rounded-full bg-secondary/80">
-                          <motion.div
-                            className="h-full rounded-full"
-                            style={{
-                              background: "var(--gradient-brand)",
-                              width: `${s.level}%`,
-                              transformOrigin: "left center",
-                            }}
-                            initial={{ scaleX: 0 }}
-                            whileInView={{ scaleX: 1 }}
-                            viewport={{ once: true, amount: 0.1 }}
-                            transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1] }}
-                          />
-                        </div>
-                      </li>
+                      <span
+                        key={s.name}
+                        className="glass inline-flex items-center rounded-xl border border-white/10 bg-secondary/40 px-3 py-1.5 text-xs font-medium text-foreground/90 transition-colors hover:border-primary/50"
+                      >
+                        {s.name}
+                      </span>
                     ))}
-                  </ul>
+                  </div>
+                </TiltCard>
+              </Reveal>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function Services() {
+  return (
+    <section id="services" className="section-pad px-4">
+      <div className="mx-auto max-w-6xl">
+        <SectionHeading
+          eyebrow="Services"
+          title="Freelance & Development Solutions"
+          sub="Tailored AI, web, and automation packages to turn your ideas into production-ready products."
+        />
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+          {SERVICES.map((srv, i) => {
+            const Icon = ICONS[srv.icon] ?? Code2;
+            return (
+              <Reveal key={srv.title} delay={i * 0.08}>
+                <TiltCard className="glass-card gradient-border flex h-full flex-col justify-between p-7 sm:p-8">
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span
+                        className="grid size-12 place-items-center rounded-2xl text-primary-foreground shadow-md"
+                        style={{ background: "var(--gradient-brand)" }}
+                      >
+                        <Icon className="size-6" />
+                      </span>
+                      <span className="glass rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400">
+                        Available on Fiverr
+                      </span>
+                    </div>
+
+                    <h3 className="mt-5 font-display text-xl font-bold">{srv.title}</h3>
+                    <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+                      {srv.blurb}
+                    </p>
+
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {srv.tags.map((t) => (
+                        <span
+                          key={t}
+                          className="glass rounded-lg px-2.5 py-1 text-xs text-foreground/80"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mt-8 border-t border-border/60 pt-5 flex items-center justify-between">
+                    <span className="text-xs text-muted-foreground font-medium">Custom Client Packages</span>
+                    <a
+                      href={srv.fiverrUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-4 py-2 text-xs font-bold text-emerald-400 border border-emerald-500/30 transition-all hover:bg-emerald-500/20 hover:scale-105"
+                    >
+                      Order on Fiverr <ExternalLink className="size-3.5" />
+                    </a>
+                  </div>
                 </TiltCard>
               </Reveal>
             );
@@ -703,5 +764,38 @@ export function Footer() {
         </p>
       </div>
     </footer>
+  );
+}
+
+export function FiverrBanner() {
+  return (
+    <section className="px-4 pb-16 pt-4">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <div className="glass-card gradient-border relative overflow-hidden p-8 sm:p-10 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <span className="glass inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold text-emerald-400 mb-3">
+                <Sparkles className="size-3.5" /> Verified Freelance Seller
+              </span>
+              <h3 className="font-display text-2xl font-bold sm:text-3xl">
+                Ready to start your project on Fiverr?
+              </h3>
+              <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+                Hire me on Fiverr for buyer protection, clear milestones, fast turnaround, and guaranteed project delivery.
+              </p>
+            </div>
+            <a
+              href={SITE.fiverr}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center gap-2.5 rounded-full px-7 py-3.5 text-sm font-bold text-black shadow-lg transition-transform hover:scale-105"
+              style={{ background: "#1dbf73" }}
+            >
+              Order on Fiverr (@yashh_19) <ExternalLink className="size-4" />
+            </a>
+          </div>
+        </Reveal>
+      </div>
+    </section>
   );
 }

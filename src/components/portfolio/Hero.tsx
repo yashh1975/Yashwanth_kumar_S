@@ -58,7 +58,7 @@ export function Hero({ onResume }: { onResume: () => void }) {
             className="glass gradient-border inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground"
           >
             <Sparkles className="size-3.5 text-primary" />
-            Open to SDE / AI internships & new-grad roles
+            Available for freelance projects & internships
           </motion.span>
 
           <motion.h1
@@ -93,8 +93,7 @@ export function Hero({ onResume }: { onResume: () => void }) {
             transition={{ delay: 1.4, duration: 0.7 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground"
           >
-            I build scalable applications, intelligent AI solutions, and modern web experiences that
-            solve real-world problems.
+            I help businesses build AI-powered apps, websites, and automation — from idea to deployed product.
           </motion.p>
 
           <motion.div
@@ -112,6 +111,17 @@ export function Hero({ onResume }: { onResume: () => void }) {
                 <Download className="size-4 transition-transform group-hover:translate-y-0.5" />
                 Download Resume
               </button>
+            </Magnetic>
+            <Magnetic>
+              <a
+                href={SITE.fiverr}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass gradient-border inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-emerald-400 transition-transform hover:scale-[1.03]"
+              >
+                <Sparkles className="size-4 text-emerald-400" />
+                Hire on Fiverr
+              </a>
             </Magnetic>
             <Magnetic>
               <a

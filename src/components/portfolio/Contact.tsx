@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { ExternalLink, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { SITE } from "./data";
@@ -33,7 +33,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Let's Build Something"
-          sub="Recruiters, collaborators and curious builders — my inbox is always open."
+          sub="Clients, collaborators, and recruiters — feel free to reach out via email or order directly on Fiverr."
         />
 
         <div className="grid items-stretch gap-6 lg:grid-cols-2">
@@ -57,13 +57,13 @@ export function Contact() {
                 <label htmlFor="subject" className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
                   Subject
                 </label>
-                <input id="subject" name="subject" required placeholder="Opportunity, collaboration…" className={field} />
+                <input id="subject" name="subject" required placeholder="Project, collaboration, opportunity…" className={field} />
               </div>
               <div>
                 <label htmlFor="message" className="mb-2 block text-xs uppercase tracking-widest text-muted-foreground">
                   Message
                 </label>
-                <textarea id="message" name="message" required rows={5} placeholder="Tell me a bit about it…" className={field} />
+                <textarea id="message" name="message" required rows={5} placeholder="Tell me about your project or idea…" className={field} />
               </div>
               <Magnetic>
                 <button
@@ -82,17 +82,29 @@ export function Contact() {
           <Reveal delay={0.08} className="h-full">
             <div className="glass-card flex h-full flex-col justify-center gap-6 p-7 sm:p-9">
                 {[
-                  { Icon: Mail, label: "Email", value: SITE.email },
-                  { Icon: Phone, label: "Availability", value: "Open to internships & new-grad roles" },
+                  { Icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
+                  { Icon: ExternalLink, label: "Fiverr Profile", value: "Order directly on Fiverr (@yashh_19)", href: SITE.fiverr },
+                  { Icon: Phone, label: "Availability", value: "Available for Freelance & Internships" },
                   { Icon: MapPin, label: "Based in", value: "Bangalore, India · Remote friendly" },
-                ].map(({ Icon, label, value }) => (
+                ].map(({ Icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
                     <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
                       <Icon className="size-4" />
                     </span>
                     <div>
                       <p className="text-xs uppercase tracking-widest text-muted-foreground">{label}</p>
-                      <p className="text-sm">{value}</p>
+                      {href ? (
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold text-foreground transition-colors hover:text-primary underline-offset-4 hover:underline"
+                        >
+                          {value}
+                        </a>
+                      ) : (
+                        <p className="text-sm">{value}</p>
+                      )}
                     </div>
                   </div>
                 ))}

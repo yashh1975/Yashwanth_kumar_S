@@ -15,16 +15,52 @@ export const RESUMES = [
 
 export const SITE = {
   name: "Yashwanth Kumar S",
-  role: "Software Engineer | AI Enthusiast | Cloud Developer",
+  role: "AI Developer | Full Stack Engineer | Freelance Specialist",
   email: "yashwanthkumarr2005@gmail.com",
   github: "https://github.com/yashh1975",
   githubUser: "yashh1975",
   linkedin: "https://www.linkedin.com/in/yashh2005/",
   leetcode: "https://leetcode.com/u/YASHWANTHKUMARS/",
   leetcodeUser: "YASHWANTHKUMARS",
+  fiverr: "https://www.fiverr.com/yashh_19?public_mode=true",
   linkedinConnections: 500,
-  location: "Bangalore, India",
+  location: "Bangalore, India · Available Worldwide",
 };
+
+export const SERVICES = [
+  {
+    title: "AI Chatbots & Web Assistants",
+    blurb:
+      "Custom intelligent AI chatbots integrated into your website or app. Features NLP, context memory, and instant 24/7 client engagement.",
+    icon: "Bot",
+    fiverrUrl: "https://www.fiverr.com/yashh_19?public_mode=true",
+    tags: ["Generative AI", "NLP", "React", "Python"],
+  },
+  {
+    title: "Business Websites & Web Apps",
+    blurb:
+      "High-converting, mobile-optimized websites and web applications built with modern frontend frameworks and fast static delivery.",
+    icon: "Rocket",
+    fiverrUrl: "https://www.fiverr.com/yashh_19?public_mode=true",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+  },
+  {
+    title: "ML Models & Dashboards",
+    blurb:
+      "End-to-end Machine Learning models, data analytics pipelines, and interactive Streamlit/React dashboards for data-driven decisions.",
+    icon: "BrainCircuit",
+    fiverrUrl: "https://www.fiverr.com/yashh_19?public_mode=true",
+    tags: ["Python", "Scikit-Learn", "Streamlit", "Analytics"],
+  },
+  {
+    title: "RPA & Process Automation",
+    blurb:
+      "Automate repetitive business workflows, data entry, and web scraping using Power Automate, UiPath, and custom Python scripts.",
+    icon: "Wrench",
+    fiverrUrl: "https://www.fiverr.com/yashh_19?public_mode=true",
+    tags: ["Power Automate", "UiPath", "Python", "Scraping"],
+  },
+];
 
 export const ROLES = [
   "Java Developer",

@@ -7,7 +7,7 @@ import { CursorGlow, LoadingScreen, ScrollProgress } from "@/components/portfoli
 import { Hero } from "@/components/portfolio/Hero";
 import { Nav } from "@/components/portfolio/Nav";
 import { ChatBot, HireMeEgg, ResumeModal } from "@/components/portfolio/Overlays";
-import { About, Footer, Journey, Profiles, Projects, Skills } from "@/components/portfolio/Sections";
+import { About, FiverrBanner, Footer, Journey, Profiles, Projects, Services, Skills } from "@/components/portfolio/Sections";
 
 const TITLE = "Yashwanth Kumar S — Software Engineer, AI & Cloud Developer";
 const DESC =
@@ -47,9 +47,11 @@ function Index() {
       <About />
       <Skills />
       <Projects />
+      <Services />
       <Journey />
       <Profiles />
       <Contact />
+      <FiverrBanner />
       <Footer />
 
       <ResumeModal open={resume} onClose={() => setResume(false)} />
