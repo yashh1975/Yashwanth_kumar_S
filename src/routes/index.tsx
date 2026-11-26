@@ -17,6 +17,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { name: "google-site-verification", content: "_e2eWDjFBQX27uuqaSUWZlz3MxhgSXaXeqeg-sQOy7M" },
+      { name: "google-site-verification", content: "googleeadb4f19764c838a" },
       { title: TITLE },
       { name: "description", content: DESC },
       {
