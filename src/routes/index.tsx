@@ -16,6 +16,7 @@ const DESC =
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { name: "google-site-verification", content: "_e2eWDjFBQX27uuqaSUWZlz3MxhgSXaXeqeg-sQOy7M" },
       { title: TITLE },
       { name: "description", content: DESC },
       {
