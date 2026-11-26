@@ -171,6 +171,15 @@ export const PROJECTS: {
   demo?: string;
 }[] = [
   {
+    title: "AGC Billing System",
+    blurb:
+      "Retail jewelry billing and invoice management system built for Anjaneya Gold Company with itemized inventory, barcode management, automated GST calculation, and receipt generation.",
+    tags: ["Electron", "React", "TypeScript", "Drizzle ORM", "Tailwind CSS"],
+    category: "Web",
+    metric: "Automated GST billing & inventory",
+    code: "https://github.com/yashh1975/AGC-Billing",
+  },
+  {
     title: "DGen AI",
     blurb:
       "AI synthetic data generation platform designed for privacy-preserving data synthesis, automated dataset creation, and analytics.",

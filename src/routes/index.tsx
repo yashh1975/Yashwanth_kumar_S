@@ -9,19 +9,34 @@ import { Nav } from "@/components/portfolio/Nav";
 import { ChatBot, HireMeEgg, ResumeModal } from "@/components/portfolio/Overlays";
 import { About, FiverrBanner, Footer, Journey, Profiles, Projects, Services, Skills } from "@/components/portfolio/Sections";
 
-const TITLE = "Yashwanth Kumar S — Software Engineer, AI & Cloud Developer";
+const TITLE = "Yash (Yashwanth Kumar S) | AI, Web & Cloud Engineer";
 const DESC =
-  "Portfolio of Yashwanth Kumar S: software engineer building scalable applications, AI solutions and secure cloud systems with Java, Python, React and AWS.";
+  "Official portfolio of Yash (Yashwanth Kumar S / yashh1975). Hire on Fiverr for proven AI chatbots, modern websites & RPA automation. Explore projects today.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
+      {
+        name: "keywords",
+        content:
+          "Yash, y2k, yashh, yashwanth, yashwanth kumar s, 1975, yashh1975, yashh1974, yash fiverr, yashh2005, YASHWANTHKUMARS, Yash Portfolio, yashh.pages.dev, Yash AI Engineer, Yash Freelance, Yash Developer",
+      },
+      { property: "og:title", content: "Yash (Yashwanth Kumar S) — AI & Full Stack Freelance Developer" },
+      {
+        property: "og:description",
+        content:
+          "Discover AI chatbots, responsive web apps, and RPA automation by Yash (yashh / yashh1975). Available on Fiverr for custom development and contracts.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Yash (Yashwanth Kumar S) | AI, Web & Automation Developer" },
+      {
+        name: "twitter:description",
+        content:
+          "Explore high-impact AI solutions, full-stack websites, and automation built by Yash (yashh / yashh1975). Available for hire on Fiverr.",
+      },
     ],
   }),
   component: Index,

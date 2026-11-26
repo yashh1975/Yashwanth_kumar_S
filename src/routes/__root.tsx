@@ -74,35 +74,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer | Official Portfolio" },
+      { title: "Yash (Yashwanth Kumar S) | AI, Web & Cloud Engineer" },
       {
         name: "description",
         content:
-          "Official portfolio website of Yash (Yashwanth Kumar S / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist. Explore projects, LeetCode stats, and skills.",
+          "Official portfolio of Yash (Yashwanth Kumar S / yashh1975). Hire on Fiverr for proven AI chatbots, modern websites & RPA automation. Explore projects today.",
       },
       {
         name: "keywords",
         content:
-          "Yash, Yashwanth, Yashwanth Kumar S, Yashwanth Kumar, Yashwanth S, yashh, yashh1975, YASHWANTHKUMARS, Yash Portfolio, yashh.pages.dev, Yash AI Engineer, Yash Cloud Developer",
+          "Yash, y2k, yashh, yashwanth, yashwanth kumar s, 1975, yashh1975, yashh1974, yash fiverr, yashh2005, YASHWANTHKUMARS, Yash Portfolio, yashh.pages.dev, Yash AI Engineer, Yash Freelance, Yash Developer",
       },
-      { name: "author", content: "Yashwanth Kumar S (Yash)" },
+      { name: "author", content: "Yashwanth Kumar S (Yash / yashh / y2k)" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
-      { property: "og:title", content: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer" },
+      { property: "og:title", content: "Yash (Yashwanth Kumar S) — AI & Full Stack Freelance Developer" },
       {
         property: "og:description",
         content:
-          "Official portfolio of Yash (Yashwanth Kumar S / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist.",
+          "Discover AI chatbots, responsive web apps, and RPA automation by Yash (yashh / yashh1975). Available on Fiverr for custom development and contracts.",
       },
       { property: "og:url", content: "https://yashh.pages.dev/" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Yash Portfolio (Yashwanth Kumar S)" },
+      { property: "og:site_name", content: "Yash Portfolio (Yashwanth Kumar S / yashh1975)" },
       { property: "og:image", content: "https://yashh.pages.dev/favicon.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Yash (Yashwanth Kumar S) | AI & Cloud Software Engineer" },
+      { name: "twitter:title", content: "Yash (Yashwanth Kumar S) | AI, Web & Automation Developer" },
       {
         name: "twitter:description",
         content:
-          "Official portfolio of Yashwanth Kumar S (yashh / yashh1975) — AI/ML Engineer, Cloud Developer & Full Stack Specialist.",
+          "Explore high-impact AI solutions, full-stack websites, and automation built by Yash (yashh / yashh1975). Available for hire on Fiverr.",
       },
     ],
     links: [
@@ -140,27 +140,68 @@ function RootShell({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Yashwanth Kumar S",
-              "alternateName": ["Yashwanth S", "Yashwanth Kumar", "yashh", "yashh1975", "YASHWANTHKUMARS"],
-              "url": "https://yashh.pages.dev/",
-              "image": "https://yashh.pages.dev/favicon.png",
-              "sameAs": [
-                "https://github.com/yashh1975",
-                "https://leetcode.com/u/YASHWANTHKUMARS/",
-                "https://yashh.pages.dev/"
-              ],
-              "jobTitle": "AI & Cloud Software Engineer",
-              "description":
-                "Yashwanth Kumar S (yashh) is a software engineer specializing in AI solutions, cloud infrastructure, and modern web applications.",
-              "knowsAbout": [
-                "Artificial Intelligence",
-                "Machine Learning",
-                "Cloud Computing",
-                "Software Engineering",
-                "React",
-                "Python",
-                "Java"
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "@id": "https://yashh.pages.dev/#person",
+                  "name": "Yashwanth Kumar S",
+                  "alternateName": [
+                    "Yash",
+                    "y2k",
+                    "yashh",
+                    "yashh1975",
+                    "yashh1974",
+                    "yash fiverr",
+                    "Yashwanth S",
+                    "Yashwanth Kumar",
+                    "YASHWANTHKUMARS",
+                    "yashh2005"
+                  ],
+                  "url": "https://yashh.pages.dev/",
+                  "image": "https://yashh.pages.dev/favicon.png",
+                  "sameAs": [
+                    "https://github.com/yashh1975",
+                    "https://www.linkedin.com/in/yashh2005/",
+                    "https://leetcode.com/u/YASHWANTHKUMARS/",
+                    "https://www.fiverr.com/yashh_19?public_mode=true",
+                    "https://github.com/yashh1975/AGC-Billing",
+                    "https://github.com/yashh1975/DGen-AI",
+                    "https://yashh.pages.dev/"
+                  ],
+                  "jobTitle": "AI & Cloud Software Engineer | Freelance Specialist",
+                  "description":
+                    "Yashwanth Kumar S (known as Yash, y2k, yashh, yashh1975) is a software engineer and freelance developer on Fiverr specializing in custom AI chatbots, full-stack web applications, and RPA automation.",
+                  "knowsAbout": [
+                    "Artificial Intelligence",
+                    "Machine Learning",
+                    "Generative AI",
+                    "RPA Automation",
+                    "UiPath",
+                    "Power Automate",
+                    "Full Stack Web Development",
+                    "Cloud Computing",
+                    "React",
+                    "TypeScript",
+                    "Electron",
+                    "Python",
+                    "Java"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://yashh.pages.dev/#website",
+                  "url": "https://yashh.pages.dev/",
+                  "name": "Yash Portfolio",
+                  "alternateName": [
+                    "Yashwanth Kumar S Portfolio",
+                    "yashh.pages.dev",
+                    "Yash Fiverr Portfolio",
+                    "y2k Developer Portfolio"
+                  ],
+                  "publisher": { "@id": "https://yashh.pages.dev/#person" },
+                  "description":
+                    "Official portfolio of Yash (Yashwanth Kumar S / yashh1975). AI chatbots, web apps, RPA automation, and freelance packages on Fiverr."
+                }
               ]
             }),
           }}

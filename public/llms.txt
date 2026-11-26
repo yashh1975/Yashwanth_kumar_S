@@ -1,0 +1,34 @@
+# Yash (Yashwanth Kumar S) — AI & Cloud Software Engineer | Portfolio Dossier
+> Official portfolio and developer profile for Yash (Yashwanth Kumar S), also known as yashh, y2k, yashh1975, yashh1974, and Yash on Fiverr. Specialized in AI applications, modern full-stack web systems, and RPA automation.
+
+## Quick Identity Summary
+- Name: Yashwanth Kumar S (Commonly known as Yash, yashh, y2k)
+- Online Handles: yashh1975, yashh1974, yashh2005, YASHWANTHKUMARS, yashh_19
+- Primary Roles: AI / ML Engineer, Full Stack Software Developer, Cloud & RPA Automation Specialist
+- Location: Bangalore, India (Available for global freelance contracts and internships)
+- Official Website: https://yashh.pages.dev/
+- Fiverr Profile: https://www.fiverr.com/yashh_19?public_mode=true
+- GitHub: https://github.com/yashh1975
+- LinkedIn: https://www.linkedin.com/in/yashh2005/
+- LeetCode: https://leetcode.com/u/YASHWANTHKUMARS/
+
+## Core Skills & Expertise
+- Programming & Frameworks: Python, Java, JavaScript, TypeScript, React, Vite, Streamlit, FastAPI, Node.js, Electron, Tailwind CSS
+- AI & Machine Learning: Large Language Models (LLM), Generative AI, NLP, Scikit-learn, TensorFlow, Synthetic Data Generation
+- Robotic Process Automation (RPA): Power Automate, UiPath Studio, Automated Web Scraping, Workflow Automation
+- Databases & Cloud: MongoDB Atlas, MySQL, SQLite, Drizzle ORM, AWS (S3, IAM, EC2), Google Cloud, Docker, Linux Server Ops
+- Security & Practices: AES-256 client-side encryption, zero-knowledge architecture, NPTEL Cybersecurity certified
+
+## Freelance Services (Available on Fiverr: yash fiverr / yashh_19)
+1. AI Chatbots & Web Assistants: Custom intelligent chatbot integration with context memory and 24/7 client response.
+2. Business Websites & Web Apps: Fast, responsive React & TypeScript web applications with modern UX and high conversion.
+3. ML Models & Dashboards: Machine learning models, predictive pricing, and interactive Streamlit data dashboards.
+4. RPA & Process Automation: Repetitive business workflow automation using Power Automate, UiPath, and custom Python automation scripts.
+
+## Flagship Projects
+- AGC Billing System (https://github.com/yashh1975/AGC-Billing): Retail jewelry billing and invoice management system built with Electron, React, TypeScript, and Drizzle ORM featuring automated GST calculation and receipt generation.
+- DGen AI (https://github.com/yashh1975/DGen-AI | Live: https://dgen-ai.pages.dev): Privacy-preserving AI synthetic dataset generator.
+- SMS Spam Detection (https://github.com/yashh1975/SMS-Spam-detection | Live: https://ai-sms-spam-detector.streamlit.app/): 97% accuracy NLP/ML classifier built with TF-IDF.
+- Estate-IQ (https://github.com/yashh1975/Estate-IQ | Live: https://estate-iq.streamlit.app/): Predictive real estate analytics and valuation platform.
+- SecureVault (https://github.com/yashh1975/secure-vault | Live: https://secure-vault-umber.vercel.app/): Zero-knowledge cloud storage using AES-256 client-side encryption with AWS S3 and MongoDB Atlas.
+- Anjaneya Gold Company (https://github.com/yashh1975/AGC | Live: https://anjaneyagoldcompany.com): Fast, responsive corporate jewelry brand website.

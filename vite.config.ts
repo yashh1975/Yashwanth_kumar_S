@@ -25,6 +25,7 @@ export default defineConfig(({ command }) => ({
     react(),
   ],
   resolve: {
+    dedupe: ["react", "react-dom", "@tanstack/react-router", "@tanstack/react-query"],
     alias: {
       "@": `${process.cwd()}/src`,
     },
